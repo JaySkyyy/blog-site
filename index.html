@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+   <link rel="stylesheet" href="css/styles.css">
+
+   <title>NP Learning</title>
+   <link rel="shortcut icon" href="/imgs/Logo1.png">
+</head>
+
+<body>
+   <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+         <div class="container">
+            <a class="navbar-brand" href="index.html">
+               <img src="/imgs/Logo1.png" alt="Logo" width="60" height="20" class="d-inline-block align-text-top">
+               NP Learning</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Переключатель навигации">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                     <a class="nav-link" href="search.php">Статьи</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="about.php">О нас</a>
+                  </li>
+               </ul>
+               <form class="d-flex" name="forma" action="search.php" method="get">
+                  <input class="form-control me-2" name="formtext" type="text" placeholder="Поиск" aria-label="Поиск">
+                  <button class="btn btn-outline-success" style="margin-left: 10px;" type="submit">Поиск</button>
+               </form>
+            </div>
+         </div>
+      </nav>
+   </header>
+
+   <section class="main">
+      <section class="main-top">
+         <div class="main-top-content">
+            <div class="welcome-top">
+               NP Learning
+            </div>
+            <div class="welcome-top">
+               Научитесь создавать плагины для Navisworks
+            </div>
+            <div class="welcome-center">
+               Добро пожаловать на наш сайт, где вы cможете найти статьи о том, как создавать плагины для Navisworks.
+            </div>
+            <form action="pa_start.php">
+               <button type="submit" class="btn btn-dark" style="width: 160px; height: 50px; background-color: black;">
+                  Начать</button>
+            </form>
+
+         </div>
+      </section>
+
+      
+
+      <section class="mid-start">
+         <div class="mid-start-block">
+            <div class="block-texts">
+               <div class="text1">
+                  Создание плагинов для Navisworks</div>
+               <div class="text2">
+                  Узнайте шаг за шагом, как создавать собственные плагины для Navisworks, с помощью наших подробных
+                  руководств.
+               </div>
+               <div>
+                  <!--<form action="pa_start.php">
+                     <button type="submit" class="btn btn-dark"
+                        style="width: 160px; height: 50px; background-color: black;">
+                        Читать</button>
+                  </form>-->
+               </div>
+            </div>
+
+            <div class="h-cards">
+               <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0" id="row_click" onclick="location.href='pa_start.php';">
+                     <div class="col-md-4">
+                        <img src="imgs/carts/start.jpg" class="img-fluid rounded-start"
+                           style="height: 100%; width: auto;">
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h5 class="card-title">Введение в Navisworks</h5>
+                           <p class="card-text">В этой статье мы предоставим обзор Navisworks, рассмотрим с чем будем
+                              работать.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="card mb-3" style="max-width: 540px;">
+                  <div class="row g-0" id="row_click" onclick="location.href='a_2.php';">
+                     <div class="col-md-4">
+                        <img src="imgs/carts/nachalo.jpg" class="img-fluid rounded-start"
+                           style="height: 100%; width: auto;">
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h5 class="card-title">Начало работы</h5>
+                           <p class="card-text">Изучите основы настройки среды разработки и создания простого плагина
+                              Navisworks.</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      
+      <section class="cards">
+         <div class="recs">
+            Рекомендуемые статьи
+         </div>
+
+         <div class="cards-place">
+            <div class="card" style="width: 16rem;">
+               <img src="imgs/carts/structure2.jpg" class="card-img-top" height="200px">
+               <div class="card-body">
+                  <h5 class="card-title">Структура API</h5>
+                  <p class="card-text">Поговорим о структуре Navisworks и пройдёмся по используемым классам.</p>
+                  <a href="a_3.php" class="btn btn-primary">Перейти</a>
+               </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+               <img src="imgs/carts/auto.jpg" class="card-img-top" height="200px">
+               <div class="card-body">
+                  <h5 class="card-title">Автоматизация</h5>
+                  <p class="card-text">Рассмотрим автоматизацию .NET API, для чего она может пригодиться.</p>
+                  <a href="a_5.php" class="btn btn-primary">Перейти</a>
+               </div>
+            </div>
+            <div class="card" style="width: 16rem;">
+               <img src="imgs/carts/tree.jpg" class="card-img-top" height="200px">
+               <div class="card-body">
+                  <h5 class="card-title">Древовидная структура</h5>
+                  <p class="card-text">Рассмотрим структуры родительского или иерархического характера.</p>
+                  <a href="a_7.php" class="btn btn-primary">Перейти</a>
+               </div>
+            </div>
+         </div>
+      </section>
+   </section>
+
+   <section class="footer">
+      <div class="footer-text">
+         <div>
+            NP Learning
+         </div>
+         <div>
+            Россия, Салават
+         </div>
+         <div>
+            Телефон: 7-917-999-99-99
+         </div>
+         <div>
+            Email: info@example.com
+         </div>
+      </div>
+   </section>
+
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
